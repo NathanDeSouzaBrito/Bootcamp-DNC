@@ -10,6 +10,7 @@
     <title>Bootcamp DNC</title>
   </head>
   <body>
+    <!-- Main Nav Bar -->
     <nav id="navP">
       <div id="menu">
         <a href="">Home</a>
@@ -18,5 +19,75 @@
       </div>
       <button id="buttonLogin">Login</button>
     </nav>
+
+    <section>
+      <!-- Text Header -->
+      <header>
+        <h1>BOOTCAMP DNC</h1>
+
+        <h2>
+          Esse será um evento exclusivo para todos os alunos <br />
+          da <b>DNC</b>, que querem
+          <span class="prominenceT">acelerar a carreira</span> com uma <br />
+          semana intensiva de conteúdo de mercado entre <br />
+          <span class="prominenceT">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+        </h2>
+      </header>
+
+      <!-- Registration Form -->
+      <form action="">
+        <div class="formGroup">
+          <!-- Name -->
+          <label>Nome:</label>
+          <input type="text" placeholder="Insira seu nome aqui" required />
+        </div>
+
+        <!-- Last Name -->
+        <div class="formGroup">
+          <label>Sobrenome:</label>
+          <input type="text" placeholder="Insira seu sobrenome aqui" required />
+        </div>
+
+        <!-- Area CheckBox -->
+        <div class="formGroup">
+          <label>Área de Interesse:</label>
+          <div class="checkboxItens">
+            <input type="checkbox" value="front" />
+            <label>Front-End</label>
+
+            <input type="checkbox" value="back" />
+            <label>Back-End</label>
+
+            <input type="checkbox" value="dataBase" />
+            <label>Banco de Dados</label>
+          </div>
+        </div>
+
+        <!-- E-mail -->
+        <div class="formGroup">
+          <label>E-mail:</label>
+          <input type="email" placeholder="Insira seu e-mail aqui" required />
+        </div>
+
+        <!-- Phone Number -->
+        <div class="formGroup">
+          <label>Telefone:</label>
+          <input type="number" placeholder="(99) 99999-9999" required />
+        </div>
+
+        <!--  Creative Phrase -->
+        <div class="formGroup">
+          <label>Insira uma frase criativa aqui:</label>
+          <input
+            type="text"
+            placeholder="Qual frase criativa você gostaria de falar?"
+            required
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" value="Login">Inscrever-se</button>
+      </form>
+    </section>
   </body>
 </html>
