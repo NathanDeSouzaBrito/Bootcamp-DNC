@@ -5,19 +5,22 @@
 :root {
   --white: #ffffff;
   --blueDNC: #0c70f2;
+  --blackDNC: #303030;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  background-color: var(--blackDNC);
 }
 
 #navP {
   width: 100%;
   height: 100px;
 
-  background-color: #303030;
+  background-color: var(--blackDNC);
 
   display: flex;
   justify-content: space-around;
@@ -33,10 +36,18 @@
   color: var(--white);
 
   text-decoration: none;
+
+  transition: background-color 0.5s, padding 0.5s, border-radius 0.5s,
+    box-shadow 0.5s;
 }
 
 #navP div a:hover {
-  color: var(--blueDNC);
+  background-color: var(--blueDNC);
+
+  padding: 7px;
+  border-radius: 15px;
+
+  transition-duration: 0.5s;
 }
 
 #menu {
@@ -62,4 +73,126 @@
   cursor: pointer;
 
   box-shadow: 3px 2px 4px 0px #0c70f240;
+}
+
+#buttonLogin:hover {
+  background-color: #0c70f2c0;
+  transition-duration: 0.5s;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 100px;
+
+  background: var(--blackDNC);
+}
+
+header {
+  color: var(--white);
+  font-family: "inter";
+}
+
+header h1 {
+  text-align: center;
+
+  font-size: 75px;
+  font-weight: 650;
+
+  padding-bottom: 50px;
+}
+
+header h2 {
+  text-align: center;
+
+  font-size: 38px;
+  font-weight: 500;
+
+  padding-bottom: 100px;
+}
+
+header .prominenceT {
+  background-color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+
+header .prominenceT:hover {
+  background-color: var(--blueDNC);
+  cursor: default;
+  transition-duration: 0.5s;
+
+  border-radius: 10px;
+}
+
+form {
+  color: var(--white);
+  font-family: "inter";
+  font-size: 30px;
+  font-weight: 600;
+
+  width: 600px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px 0 10px 0;
+}
+
+form input {
+  border-radius: 10px;
+
+  height: 45px;
+  border: 0;
+
+  font-size: 20px;
+
+  padding: 10px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+form input::placeholder {
+  color: rgba(57, 57, 57, 0.5);
+}
+
+form label {
+  margin: 10px 0 10px 0;
+}
+
+.checkboxItens {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.checkboxItens label {
+  font-size: 25px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+input[type="submit"] {
+  margin-top: 80px;
+
+  background-color: var(--blueDNC);
+  color: var(--white);
+
+  width: 100%;
+  height: 56px;
+
+  font-size: 36px;
+  font-weight: 600;
+
+  box-shadow: 0, 6px 4px rgba(12, 112, 242, 0.25);
+
+  cursor: pointer;
 }
